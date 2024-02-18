@@ -22,7 +22,7 @@ const companies = [
         dol: "Present",
         experience: "Enhanced the Yocket website, a leading online platform for higher education opportunities abroad, while also led updates and enhancements to improve functionality and user experience of Superocket, an employee-facing web application. Responsible for end to end feature development using VueJS & TailwindCSS for frontend and NodeJs & PostgresSQL for backend.",
         designation: "SDE-1",
-        logo: "./icons/yocket.png",
+        logo: "../assets/yocket.png",
         testimonials: [
             {
                 id: 1,
