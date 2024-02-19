@@ -29,7 +29,7 @@
             <div class="add-comment">
                 <img class="w-10 h-10 lg:w-[80px] lg:h-[80px] rounded-full" src="./icons/me.jpg" width="90" height="90"
                     alt="">
-                <div class="comment-details">
+                <div class="comment-details rounded-[32px]">
                     <p>Write a comment...</p>
                 </div>
                 <img class="w-8 h-8 lg:w-[50px] lg:h-[50px]" src="./icons/send.png" width="50" height="50" alt="">
@@ -37,7 +37,7 @@
             <div v-if="company.testimonials.length" v-for="testimonial in company.testimonials" :key="testimonial.id"
                 class="comment">
                 <span class="profile-pic w-10 h-10 lg:w-[80px] lg:h-[80px] rounded-full">{{ testimonial.name[0] }}</span>
-                <div class="comment-details flex flex-col gap-2">
+                <div class="comment-details flex flex-col gap-2 rounded-xl lg:rounded-3xl">
                     <div class="flex flex-col">
                         <p class="name">{{ testimonial.name }}</p>
                         <span class="text-[grey]"><span class="text-[steelblue]">@{{ testimonial.designation }}</span> at {{ company.name }}</span>
@@ -81,7 +81,6 @@ const props = defineProps({
     background-color: rgb(245, 244, 244);
     box-shadow: lightsteelblue 1px 1px 2px;
     padding: 1rem;
-    border-radius: 2rem;
     width: 100%;
 }
 

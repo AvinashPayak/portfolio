@@ -2,7 +2,7 @@
     <div class="create-post">
         <div class="flex items-center gap-1 lg:gap-5">
             <img class="w-10 h-10 lg:w-[80px] lg:h-[80px] rounded-full" src="./icons/me.jpg">
-            <p class="text-[grey]">Update your activity?</p>
+            <p class="text-[grey]">Add new Experience...</p>
             <img class="w-7 h-7 lg:w-[80px] lg:h-[80px]" src="./icons/feeling.png">
         </div>
         <hr>
