@@ -19,7 +19,8 @@
             </div>
             <div class="project-details">
                 <div class="header bg-[lightsteelblue] ">
-                    <h2 class="text-[steelblue] flex items-center gap-4">{{ selectedProject.name }} <a target="_blank" :href="selectedProject.url"><img src="../icons/new-tab.svg"></a></h2>
+                    <h2 class="text-[steelblue] flex items-center gap-4">{{ selectedProject.name }} <a target="_blank"
+                            :href="selectedProject.url"><img src="../icons/new-tab.svg"></a></h2>
                     <span class="text-[steelblue]">{{ selectedProject.date }}</span>
                 </div>
                 <div class="flex flex-col items-center p-8">
@@ -32,34 +33,27 @@
                 </div>
             </div>
         </div>
-        <div class="projects-accordian flex flex-col gap-4">
+
+        <div class="projects-accordian">
             <h1>Projects</h1>
-            <div class="shadow-lg">
-                <div v-for="project in projectsData" class="border p-2">
-                    <div class='w-full mx-auto'>
-                        <div class='max-w-md mx-auto space-y-6'>
-                            <div @click="openAccordian(project.id)" class='flex w-full justify-start gap-4'>
-                                <div class='transform transition duration-300 ease-in-out'
-                                    :class="{ 'rotate-90': showAccordianData, ' -translate-y-0.0': !showAccordianData }">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="steelblue" class="w-6 h-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                    </svg>
-                                </div>
-                                <div class="flex items-center justify-start text-start gap-2 min-w text-[steelblue]">
-                                    <button class="text-[16px] ">{{ project.name }}</button>
-                                    <span><a target="_blank" :href="project.url"><img fill="steelblue" src="../icons/new-tab.svg" alt=""/></a></span>
-                                </div>
-                            </div>
-
-                            <div class="flex flex-col justify-between w-full mt-2 p-4 text-[steelblue] border-t transform transition text-justify duration-300 ease-in-out pb-40"
-                                x-cloak :x-show="project.id === index" x-collapse x-collapse.duration.500ms>
-                                <p class="w-full">{{ project.description }}</p>
-                            </div>
-
-                        </div>
+            <div class="text-[steelblue] my-4 flex flex-col gap-10">
+                <div class="flex flex-col gap-2" v-for="project in projectsData">
+                    <h2 class="font-bold">{{ project.name }}</h2>
+                    <div class="flex items-center gap-2">
+                        <span class="text-[16px]">{{ project.date }} </span>
+                        <span>
+                            <a class="inline" target="_blank" :href="project.url"><img fill="steelblue" src="../icons/new-tab.svg" alt="" /></a>
+                        </span>
                     </div>
+                    <div class="flex gap-2 flex-wrap">
+                        <span class="border rounded-xl bg-[lightsteelblue] px-2 py-1" v-for="skill in project.techstack">{{
+                            skill }}</span>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <img v-for="image in project.images" :src="image">
+                    </div>
+                    <p class="text-justify">{{ project.description }}</p>
+
                 </div>
             </div>
         </div>
@@ -82,7 +76,7 @@ const projectsData = [
     },
     {
         id: 2,
-        name: 'To do list',
+        name: 'To Do List',
         description: 'To do list application with time tracking and sorting functionalities',
         techstack: ['HTML', 'CSS', 'JS', 'Vue'],
         date: '2021',
@@ -122,10 +116,6 @@ const selectProject = (value) => {
 }
 </script>
 <style scoped>
-h2 {
-    font-size: 60px;
-}
-
 h3 {
     color: steelblue;
 }
@@ -135,6 +125,10 @@ h3 {
     h1 {
         color: steelblue;
         font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 60px;
     }
 
     .projects-container {
