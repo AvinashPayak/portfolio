@@ -111,8 +111,7 @@ const projectsData = [
 
 const showAccordianData = computed(() => selectedProject.id === index.value);
 const openAccordian = (value) => {
-    if(index.value === value) index.value = null;
-    else index.value = value;
+    index.value = value;
 }
 const index = ref(1);
 const selectedProject = computed(() => {
