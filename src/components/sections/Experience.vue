@@ -22,7 +22,7 @@ const companies = [
         dol: "Present",
         experience: "Enhanced the Yocket website, a leading online platform for higher education opportunities abroad, while also led updates and enhancements to improve functionality and user experience of Superocket, an employee-facing web application. Responsible for end to end feature development using VueJS & TailwindCSS for frontend and NodeJs & PostgresSQL for backend.",
         designation: "SDE-1",
-        logo: "/assets/yocket.png",
+        logo: "/public/yocket.png",
         testimonials: [
             {
                 id: 1,
@@ -43,7 +43,7 @@ const companies = [
         dol: "20 April, 2022",
         experience: "Created testing strategy documents, test suites, test plans and test cases for projects. Performed accessibility testing, functional testing and reported bugs in JIRA and Azure. Created automation test scripts for projects using Selenium Webdriver",
         designation: "QA Engineer",
-        logo: "/assets/lti.png",
+        logo: "/public/lti.png",
         testimonials: [
             {
                 id: 1,
@@ -64,7 +64,7 @@ const companies = [
         dol: "15 June, 2020",
         experience: "Implemented a static website for a homeopathy clinic under guidance of a senior frontend developer. Learned how to convert Adobe XD design provided by the designer into a responsive static website using HTML, CSS and Javascript.",
         designation: "Fullstack Developer Intern",
-        logo: "/assets/fd.png",
+        logo: "/public/fd.png",
         testimonials: [
             {
                 id: 1,
