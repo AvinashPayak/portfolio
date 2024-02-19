@@ -77,7 +77,7 @@ const projectsData = [
         description: 'User can search and view recipes by categories. User can view the ingredients and the cooking instructions',
         techstack: ['HTML', 'CSS', 'JS', 'Vue'],
         date: '2022',
-        images: ['src/components/icons/projects/recipe-1.png', 'src/components/icons/projects/recipe-2.png', 'src/components/icons/projects/recipe-3.png'],
+        images: ['recipe-1.png', 'recipe-2.png', 'recipe-3.png'],
         url: 'https://precious-selkie-499f2f.netlify.app/'
     },
     {
@@ -86,7 +86,7 @@ const projectsData = [
         description: 'To do list application with time tracking and sorting functionalities',
         techstack: ['HTML', 'CSS', 'JS', 'Vue'],
         date: '2021',
-        images: ['src/components/icons/projects/todo-1.png', 'src/components/icons/projects/todo-2.png'],
+        images: ['todo-1.png', 'todo-2.png'],
         url: 'https://monumental-zuccutto-f92273.netlify.app/'
     },
     {
@@ -95,7 +95,7 @@ const projectsData = [
         description: 'Manage occupancy, notice board, room allocation for a hostel',
         techstack: ['HTML', 'CSS', 'JS', 'EJS', 'NodeJs', 'ExpressJs', 'MySQL'],
         date: '2019',
-        images: ['src/components/icons/projects/hostel-2.png'],
+        images: ['hostel-2.png'],
         url: 'https://github.com/AvinashPayak/Hostel-Management-System'
     },
     {
@@ -104,7 +104,7 @@ const projectsData = [
         description: 'Portfolio website for homeopathy doctor',
         techstack: ['HTML', 'CSS', 'JS'],
         date: '2020',
-        images: ['src/components/icons/projects/homo-2.png', 'src/components/icons/projects/homo-1.png'],
+        images: ['homo-2.png', 'homo-1.png'],
         url: 'https://avinashpayak.github.io/Homeopathy-Website/templates/index.html'
     }
 ]

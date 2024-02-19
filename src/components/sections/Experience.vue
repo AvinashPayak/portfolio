@@ -64,7 +64,7 @@ const companies = [
         dol: "15 June, 2020",
         experience: "Implemented a static website for a homeopathy clinic under guidance of a senior frontend developer. Learned how to convert Adobe XD design provided by the designer into a responsive static website using HTML, CSS and Javascript.",
         designation: "Fullstack Developer Intern",
-        logo: "/public/fd.png",
+        logo: "fd.png",
         testimonials: [
             {
                 id: 1,
