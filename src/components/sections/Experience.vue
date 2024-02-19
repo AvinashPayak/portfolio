@@ -3,8 +3,8 @@
     <div class="flex flex-col gap-4 relative">
         <h1>Experience</h1>
         <div class="flex flex-col">
-            <CreatePost class="lg:w-3/4 mx-auto" />
-            <div class="lg:w-3/4 mx-auto">
+            <CreatePost class="lg:w-3/4 lg:mx-auto" />
+            <div class="lg:w-3/4 lg:mx-auto">
                 <Company :company="company" v-for="company of companies" :key="company.id" />
             </div>
         </div>
